@@ -1,0 +1,217 @@
+.banner{
+    background-color: $red-bar;
+    .container{
+        @include container;
+        padding:40px;
+        h2{
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+            @media screen and (min-width:768px){
+                font-size:3.2vw;
+                padding: 0;
+            }
+        }
+        p{
+            margin: 30px 0;
+            font-weight: 400;
+            color: $grey-text;
+            line-height: 1.5;
+            text-align: center;
+            @media screen and (min-width:768px){
+                margin: 5px ;
+                padding: 0;
+            }
+        }
+    }
+    
+
+}
+
+.about{
+    .leader-consulting{
+        @include container;
+        .flex-bar{
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width:768px){
+                &{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+            h6{
+                color: $red-bar;
+                text-align: start;
+                align-self: stretch;
+            }
+            h2{
+                color:black;
+                text-align: start;
+                align-self: stretch;
+                line-height: 1.1;
+                margin: 10px 0;
+                font-size: 28px;
+                @media screen and (min-width:768px){
+                    font-size:3.2vw;
+                    padding: 5px 0;
+                }
+            }
+            p{
+                color:$grey-text;
+                text-align: start;
+                align-self: stretch;
+                line-height: 1.1;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+.MVV{
+    .flex-bar{
+        flex-direction: column;
+        display: flex;
+     align-items: center;
+     @media screen and (min-width:768px){
+        &{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+     .img{
+         width: 70%;
+         margin: 0 auto;
+         img{
+             width: 100%;
+         }
+     }
+     .flex-col{
+        flex-direction: column;
+        display: flex;
+     align-items: center;
+     }
+     .flex-row{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between; 
+    align-items:flex-end;
+    padding:10px;
+    h6{
+        font-size: 20px;
+        line-height: 2;
+    }
+    i{
+        margin: 20px;
+        font-size: 58px;
+        @media screen and (min-width:768px){
+            font-size: 38px;
+            width: 100px;
+        }
+        
+        
+    }
+     }
+    }
+}
+
+.team{
+    background-color: $grey-background;
+    padding: 10px;
+    .container{
+        @include container;
+        h4,p{
+            text-align: center;
+        }
+        h4{
+            font-size: 28px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 2;
+        }
+        .flex-bar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (min-width:768px){
+                &{
+                    display: flex;
+                    flex-direction: row;
+                    
+                }
+            }
+        }
+        .card{
+            width: 60%;
+            height: fit-content;
+            background-color:white ;
+            padding: 30px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width:768px){
+                width: 20%;
+                align-self: stretch;
+            }
+            
+            
+            img{
+                width: 100%;
+            }
+            h5{
+                font-size: 18px;
+                text-align: center;
+                line-height: 1;
+                margin: 10px 0;
+                font-weight: 700;
+            }
+            P{
+                color: $red-bar;
+                font-size: 16px;
+                line-height: 1;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.about{
+    .solution{
+        padding: 30px 10px;
+        .container{
+            @include container;
+            h2{
+                font-size: 28px;
+                text-align: center;
+                font-weight: 800;
+                @media screen and (min-width:768px){
+                    font-size:3.2vw;
+                    padding: 5px 0;
+                }
+            }
+            p{
+                margin: 10px 0;
+                text-align: center;
+                color: $grey-text
+            }
+            .center{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                .btn{
+                    margin: 10px 0;
+                    @include button(white,$red-bar);
+                    @media screen and (min-width:768px){
+                        font-size: 20px;
+                        }
+                }
+            }
+        }
+    }
+}
